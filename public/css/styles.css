@@ -1,0 +1,167 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background: url('/image/bg5.jpg') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover; /* Ensure the image covers the whole background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Header and navigation */
+header {
+    position: relative;
+    width: 100%;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the banner */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* White text color */
+    position: relative; /* For positioning the underline */
+    padding: 10px 15px; /* Padding for better spacing */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffab40; /* Light orange color on hover */
+    transform: translateY(-3px); /* Slightly lift the link */
+}
+
+/* Underline effect */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffab40; /* Light orange color for the underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+
+/* Main content */
+main {
+    padding: 40px 20px 20px; /* Adjust the top padding to reduce space between banner and blogs */
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Article */
+article {
+    background: #263238; /* Dark grayish teal background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+article h2 a {
+    font-weight: bold; /* Make the blog heading bold */
+    text-decoration: underline; /* Underline the blog heading */
+}
+
+/* Footer */
+footer {
+    background: #00796b; /* Teal background */
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffab40; /* Light orange color for links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper */
+.wrapper {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Form styling */
+form {
+    background: #000000; /* Dark grayish teal background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Light text color */
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c95e06; /* Teal border */
+    border-radius: 5px;
+    background: #333; /* Dark background for input */
+    color: #e0e0e0; /* Light text color */
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #c0500f, #c77a23); /* Teal gradient */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, #c0500f, #c77a23); /* Slightly different teal gradient on hover */
+}

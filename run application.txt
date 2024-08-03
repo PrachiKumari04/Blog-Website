@@ -1,0 +1,5 @@
+Running Your Application
+
+npm install express mongoose ejs
+
+node app.js
