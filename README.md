@@ -131,9 +131,5 @@ Contributions are welcome! If you have any ideas for improvements or new feature
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This README is tailored to your specific project structure and provides clear guidance on how to set up, run, and contribute to the project. You can modify it further if there are any additional features or specifics you'd like to include.
+## Author
+Prachi kumari - prachikumari2804@gmail.com
